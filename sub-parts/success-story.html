@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="../style.css"> 
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .alumni-spotlight {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #222;
+        }
+        
+        .spotlight-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .alumni-card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .alumni-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .alumni-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .alumni-info {
+            padding: 25px;
+        }
+        
+        .alumni-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: #222;
+        }
+        
+        .alumni-batch {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .alumni-position {
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .alumni-story {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 900px) {
+            .spotlight-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .alumni-card {
+                max-width: 400px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+    <!-- left -->
+    <div class="left-section">
+      <span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjsdrNoDbu7r24BHmkvOsmfWU-VNR4QM2dw&s" alt="Jiit Logo">
+     
+      </span>
+       <h1>JIIT University Alumni Association</h1>
+      
+    </div>
+
+    <!-- right -->
+     <ul class="right-section">
+      <li><a href="../main.html">Home</a></li>
+        <li><a href="success-story.html">Success Story</a></li>
+        <li><a href="alumni.html">Alumni List</a></li>
+        <li><a href="events.html">Upcoming Events</a></li>
+        <li><a href="sign-up.html">Sign Up</a></li>
+        <li><a href="contact-us.html">Contact Us </a></li>
+     </ul>
+  </nav>
+
+
+    <section class="alumni-spotlight">
+        <h2 class="section-title">Alumni Spotlight</h2>
+        
+        <div class="spotlight-container">
+            <!-- Alumni 1 -->
+            <div class="alumni-card">
+                <div class="alumni-image" style="background-image: url('https://www.uppolice.gov.in/viewOfficerPic.ashx?memberId=2140');"></div>
+                <div class="alumni-info">
+                    <span class="alumni-batch">2008 Batch</span>
+                    <h3 class="alumni-name">Raveena Tyagi</h3>
+                    <p class="alumni-position">IPS Officer, DCP Kanpur</p>
+                    <p class="alumni-story">Raveena is a 2008 Biotechnology graduate from JIIT who joined the Indian Police Service (IPS) and currently serves as DCP, Kanpur.After completing her B.Tech in Biotechnology, Raveena cleared the UPSC Civil Services Examination and joined the IPS in the 2014 batch. She has served in various leadership roles across Uttar Pradesh and is known for her work in community policing and women’s safety. Her journey from a tech background to public service showcases the diverse paths JIIT alumni pursue with excellence.</p>
+                </div>
+            </div>
+            
+            <!-- Alumni 2 -->
+            <div class="alumni-card">
+                <div class="alumni-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBXieoJ8AoZJgiAOGYMKiPYSq2_ep3fmY_Sg&s');"></div>
+                <div class="alumni-info">
+                    <span class="alumni-batch">2015 Batch</span>
+                    <h3 class="alumni-name">Ria Rustagi</h3>
+                    <p class="alumni-position">Co-founder & CEO, Neuphony</p>
+                    <p class="alumni-story">Ria is a trailblazing entrepreneur who co-founded Neuphony, India’s first brain wearable EEG device startup. A 2015 graduate in Electronics and Communication Engineering from JIIT, Ria co-founded Neuphony with a vision to make mental wellness measurable and accessible. The device uses EEG sensors to track brain activity and provide real-time feedback for stress, focus, and meditation. Her work has been recognized in Forbes 30 Under 30 (2023). In 2023, Neuphony signed an MoU with JIIT to launch a Brain-Computer Interface (BCI) Lab, enabling students to explore neurotechnology applications.</p>
+                </div>
+            </div>
+            
+            <!-- Alumni 3 -->
+            <div class="alumni-card">
+                <div class="alumni-image" style="background-image: url('https://media.licdn.com/dms/image/v2/C5103AQFSjzp-KdcWsQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1563850528226?e=2147483647&v=beta&t=HzKdN2f05PXsd_XMmJ2_QhOlsATzacvkL1aC10bNzRM');"></div>
+                <div class="alumni-info">
+                    <span class="alumni-batch">2011 Batch</span>
+                    <h3 class="alumni-name">Siddhanth Jain</h3>
+                    <p class="alumni-position">Co-founder of PlaySimple Games</p>
+                    <p class="alumni-story">Siddhanth is the co-founder of PlaySimple Games, a mobile gaming company acquired by Modern Times Group for $360 million. Graduating in 2011 with a B.Tech in Computer Science, Siddhanth built PlaySimple into one of India’s top casual gaming studios. Known for word games like “Word Trip” and “Word Wars,” the company scaled rapidly with millions of downloads globally. His entrepreneurial journey is a testament to JIIT’s strong tech foundation and startup culture. He was honored during the Alumni Meet 2024 for outstanding achievement in entrepreneurship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

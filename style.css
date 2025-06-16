@@ -1,0 +1,162 @@
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #F7F4ED;
+  border-color: 1px solid black;
+}
+.alumnihead{
+    background-color: peachpuff;
+    text-align: center;
+    justify-content: space-between;
+}
+
+nav{
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background-color: peachpuff;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.left-section {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.left-section img {
+    width: 60px;
+    height: auto;
+}
+
+/* .right-section{
+  border: 2px solid blue;
+} */
+
+ul {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+ul li:last-child{
+  background-color: black;
+  padding: 10px 18px;
+  border-radius: 30px;
+}
+
+ul li:last-child a {
+  color: white;
+}
+
+@media (max-width: 800px){
+  .left-section{
+    display:none;
+  }
+  ul{
+    flex-direction: column;
+  }
+  nav{
+    justify-content: center;
+  }
+  }
+
+
+/* Banner */
+.banner {
+    
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    background:peachpuff;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: peachpuff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+/* Responsive
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+} */
+
+  .card-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+
+  .card {
+    width: 300px; /* Set card width */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .card-header img {
+   width:100%;
+    display: block;
+  }
+
+  .card-footer {
+    padding: 10px;
+    background-color: #fafafa;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .cl-gray {
+    color: gray;
+    font-size: 14px;
+  }
+

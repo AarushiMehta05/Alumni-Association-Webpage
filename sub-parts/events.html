@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="../style.css"> 
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F7F4ED;
+        }
+
+        header {
+            background-color: #F7F4ED;
+            border-bottom: 1px solid black;
+        }
+
+        nav {
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 60px;
+            background-color: peachpuff;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .left-section {
+            display: flex;
+            align-items: center; 
+            gap: 10px;
+        }
+
+        .left-section img {
+            width: 60px;
+            height: auto;
+        }
+
+        ul {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+
+        ul li:last-child {
+            background-color: black;
+            padding: 10px 18px;
+            border-radius: 30px;
+        }
+
+        ul li:last-child a {
+            color: white;
+        }
+
+        /* Events Page Styles */
+        .main-content {
+            padding: 40px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .page-intro h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .page-intro p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .events-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .event-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-color: #ddd; /* Fallback color */
+        }
+
+        .event-details {
+            padding: 25px;
+        }
+
+        .event-date {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .event-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .event-description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .register-btn {
+            background-color: black;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .register-btn:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                padding: 15px 20px;
+                flex-direction: column;
+            }
+            
+            .left-section {
+                margin-bottom: 15px;
+            }
+            
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .main-content {
+                padding: 30px 20px;
+            }
+            
+            .events-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <!-- left -->
+    <div class="left-section">
+      <span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjsdrNoDbu7r24BHmkvOsmfWU-VNR4QM2dw&s" alt="Jiit Logo">
+     
+      </span>
+       <h1>JIIT University Alumni Association</h1>
+      
+    </div>
+
+    <!-- right -->
+     <ul class="right-section">
+      <li><a href="../main.html">Home</a></li>
+        <li><a href="success-story.html">Success Story</a></li>
+        <li><a href="alumni.html">Alumni List</a></li>
+        <li><a href="events.html">Upcoming Events</a></li>
+        <li><a href="sign-up.html">Sign Up</a></li>
+        <li><a href="contact-us.html">Contact Us </a></li>
+     </ul>
+  </nav>
+
+   <div class="main-content">
+        <div class="page-intro">
+            <h1>Upcoming Events</h1>
+            <p>Join us for these exciting events connecting JIIT alumni across batches and industries.</p>
+        </div>
+        
+        <div class="events-container">
+            <!-- EBULLIENCE -->
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="event-details">
+                    <span class="event-date">August 23, 2025</span>
+                    <h3 class="event-title">Ebullience</h3>
+                    <p class="event-description">JIIT's annual cultural fest returns with spectacular performances, competitions, and alumni meetups. Relive your college days! It will be hosted by JYC in collaboration with Radiance.</p>
+                </div>
+            </div>
+            <!-- ETHNIC NIGHT -->
+  <div class="event-card">
+    <img src="https://i.postimg.cc/rF6DKKdZ/hh.png" alt="Event Poster" style="width:100%; max-width:400px; border-radius:8px;">
+
+    <div class="event-details">
+      <span class="event-date">November 5, 2025</span>
+      <h3 class="event-title">Ethnic Night</h3>
+      <p class="event-description">
+        A vibrant celebration of cultural diversity through traditional attire, music, dance, and festive spirit — brought to life by our incredible student and alumni community.
+      </p>
+    </div>
+  </div>
+
+            <!-- TECHBLOCKS -->
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="event-details">
+                    <span class="event-date">September 16-20, 2025</span>
+                    <h3 class="event-title">Techblocks</h3>
+                    <p class="event-description">Skill development plays a pivotal role in shaping a student’s academic growth and professional future. Recognizing this ,The IEEE student branch of our college organised Techblocks 10.1, a five day workshop from 16 September 2025 to 20 September 2025, aimed at enhancing technical expertise in four specialised domains: C++ , Chip Designing , Web Development and Gen AI.</p>
+                </div>
+            </div>
+            
+            <!-- JOUST -->
+            <div class="event-card">
+                <img src="https://i.postimg.cc/Gp8mzCVS/j.png" alt="Ethnic Event Poster" style="width:100%; max-width:400px; border-radius:8px;">
+
+                <div class="event-details">
+                    <span class="event-date">December 10-12, 2025</span>
+                    <h3 class="event-title">Joust</h3>
+                    <p class="event-description">During this event students from other colleges participated as well . Participants showcased exceptional oratory skills, presenting well-researched arguments and engaging in thought-provoking rebuttals. Poets, storytellers, and performers took the stage to share heartfelt verses and anecdotes.Winners and participants received certificates, trophies, and exciting prizes, celebrating their talent and effort.</p>
+                  
+                </div>
+            </div>
+            
+            <!-- NSS DRIVES -->
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('https://media.licdn.com/dms/image/v2/D5622AQH9pk-3FL07mQ/feedshare-shrink_1280/B56ZapHVEWGkAk-/0/1746593995969?e=2147483647&v=beta&t=eeA-Gu6eoI_toUrqg_pvCQYoaLE_j-atbjVUgx2tidg');"></div>
+                <div class="event-details">
+                    <span class="event-date">June 20, 2025</span>
+                    <h3 class="event-title">NSS Drives</h3>
+                    <p class="event-description">The NSS unit of JIIT sector 62 campus actively conducted various social events throughout the year 2025, to make a positive impact on the youth. These events aimed to foster a sense of social responsibility and volunteerism among the students. List of the major events of 2024 are: Blood donation camp, Swachhta Hi Seva Drive, A Day at Grace Care Academy</p>
+                    
+                </div>
+            </div>
+            
+            <!-- SPECTRA -->
+            <div class="event-card">
+                <img src="https://i.postimg.cc/kXGN9VbV/s.png" alt="Ethnic Night Stage Poster" style="width:100%; max-width:400px; border-radius:8px;">
+
+                <div class="event-details">
+                    <span class="event-date">November 17,2025</span>
+                    <h3 class="event-title">SPECTRA</h3>
+                    <p class="event-description">Spectra, the hallmark tech event organised by JIIT robotics hub μCR, stands as the most anticipated robotics event of the year. This event, spanning several days, offered students an unparalleled opportunity to delve into the fascinating world of robotics, with the main highlight being the Autonomous Workshop.</p>
+                     </div>
+            </div>
+</body>
+</html>
